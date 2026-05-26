@@ -10,7 +10,12 @@ coins = 0
 while True:
     print(f"Monster has {monster.hp} HP.")
 
-    attack = float(input("Enter damage for enemy: "))
+    try:
+        attack = float(input("Enter damage for enemy: "))
+    except ValueError:
+        print("Error, invalid input.")
+        continue
+    print("")
     monster.take_damage(attack)
 
     if not monster.is_alive:
