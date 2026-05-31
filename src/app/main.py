@@ -35,7 +35,7 @@ def summon_enemy():
     return classes.Enemy(50, 10)
 
 
-current_monster = classes.Enemy(100, 10)
+current_monster = classes.Enemy(50, 10)
 
 coins = 0
 while True:
